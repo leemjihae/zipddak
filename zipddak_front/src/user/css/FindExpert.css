@@ -1,0 +1,135 @@
+.chat-window {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat-bubble {
+    padding: 14px 18px;
+    border-radius: 15px;
+    animation: fadeIn 0.3s ease;
+}
+
+.chat-bubble.bot {
+    align-self: flex-start;
+    background: #e9f9ff;
+    border-radius: 0 15px 15px 15px;
+}
+
+.chat-bubble.user {
+    align-self: flex-end;
+    background: #ff5833;
+    border-radius: 15px 0 15px 15px;
+    color: #ffffff;
+}
+
+/* 옵션 버튼 박스 */
+.options-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+/* 버튼 스타일 */
+.option-btn {
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.option-btn:hover {
+    background: #efefef;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(7px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.findExpert-select-date-div {
+    display: flex;
+    width: 290px;
+}
+
+.select-date-button {
+    background-color: #ff5833;
+    border: none;
+    width: 50px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.select-date-button:hover {
+    background-color: #ff5833;
+}
+
+.find-expert-want-money {
+    display: flex;
+    width: 290px;
+    align-items: center;
+    height: 44px;
+}
+
+.want-money-input {
+    height: 100%;
+}
+
+.next-button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.money-button {
+    background-color: #ff5833;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+}
+
+.money-button:hover {
+    background-color: #ff5833;
+}
+
+.find-select-date-button {
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+}
+
+.find-select-date-button:hover {
+    background-color: #efefef;
+}
+
+.find-select-address-div {
+    display: flex;
+    height: 44px;
+}
+
+.find-select-address-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5833;
+    color: #ffffff;
+    margin-left: 10px;
+}

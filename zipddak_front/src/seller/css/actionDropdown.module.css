@@ -1,0 +1,63 @@
+.dropdown_frame {
+    position: fixed;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 6px;
+    width: 130px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.item {
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.item:hover {
+    background: var(--shadowColor);
+    color: var(--mainColor); /* 약한 파란톤 글자색 */
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* ******************************* */
+.userInfoBox_frame {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.block_column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    padding: 0 12px;
+}
+
+.item_column {
+    padding: 12px;
+}
+
+.block_column img {
+    width: 45px !important;
+    height: 45px;
+    object-fit: contain; /* 또는 cover */
+    flex-shrink: 0; /* flex에서 안 줄어들게 */
+}
+.compInfo {
+    font-size: 18px;
+    white-space: nowrap; /* 줄바꿈 금지 */
+    overflow: hidden; /* 넘치는 텍스트 숨김 */
+    text-overflow: ellipsis; /* 말줄임표 처리 */
+    min-width: 0;
+    width: 200px;
+    flex: 1; /* 남은 영역만 차지 */
+}

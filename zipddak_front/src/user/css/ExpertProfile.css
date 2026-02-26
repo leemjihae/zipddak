@@ -1,0 +1,188 @@
+.expertProfile-main-div {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.expertProfile-detail-info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.expertProfile-img-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.expertProfile-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+}
+
+.expertProfile-request-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.expertProfile-request-button {
+    border: none;
+    border-radius: 6px;
+    background-color: #ff5833;
+    color: #ffffff;
+    width: 150px;
+    height: 48px;
+}
+
+.expertProfile-heart,
+.expertProfile-report {
+    font-size: 20px;
+}
+
+.expertProfile-heart {
+    color: #ff5833;
+}
+.expertProfile-report {
+    margin-left: 15px;
+}
+
+.expertProfile-info-category {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
+
+.expertProfile-select-info-cate,
+.expertProfile-default-info-cate {
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    padding: 0 14px;
+}
+
+.expertProfile-select-info-cate {
+    border-bottom: 2px solid #293341;
+}
+
+.expertProfile-default-info-cate {
+    border-bottom: 2px solid #eff1f5;
+}
+
+.expertProfile-info-category-button-bar {
+    width: 338px;
+    display: flex;
+}
+
+.expertProfile-empty-bar {
+    border-bottom: 2px solid #eff1f5;
+    flex-grow: 1;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.expertProfile-homepage-link {
+    text-decoration-line: none;
+    color: #303441;
+}
+
+.expertProfile-cate-badge {
+    border: 1px solid #e0e5eb;
+    width: 121px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+}
+
+.expertProfile-info-career-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.expertProfile-info-career {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expertProfile-under-info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.expertProfile-info-career-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.expertProfile-auth-img {
+    border: 1px solid black;
+    width: 120px;
+    height: 175px;
+    border-radius: 8px;
+}
+
+.expertProfile-expert-info {
+    margin-top: 40px;
+}
+
+.expertProfile-expert-info,
+.expertProfile-service-detail,
+.expertProfile-auth-img-div,
+.expertProfile-provide-service,
+.expertProfile-portfolio-div,
+.expertProfile-question-answer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.expertProfile-hr {
+    color: #e5e5e5;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.expertProfile-portfolio {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.expertProfile-review-more-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.expertProfile-review-more-button {
+    border: none;
+    background-color: transparent;
+    color: #6a7685;
+}
+
+.more-icon {
+    margin-left: 5px;
+}

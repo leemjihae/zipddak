@@ -1,0 +1,144 @@
+.Cart-main-div {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+/* 왼쪽 장바구니 목록 */
+.cart-product-info-list {
+    width: 870px;
+}
+
+.cart-top-selectAll-div {
+    margin-top: 30px;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-select-delete-button {
+    border: none;
+    background-color: transparent;
+}
+
+.cart-selectAll-input {
+    accent-color: #ff5833;
+    zoom: 1.3;
+}
+
+.cart-top-selectAll-left-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-product-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+.cart-product-info-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-product-img-info-div {
+    display: flex;
+    gap: 14px;
+}
+
+.cart-table-trtd {
+    border-top: 1px solid #6d758f;
+}
+
+.cart-table-trtd > td {
+    text-align: center;
+    height: 42px;
+}
+
+.cart-table-trtd span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.store-row td {
+    border-top: 1px solid #6d758f;
+    border-bottom: 1px solid #e6e6e6;
+    height: 42px;
+}
+
+.store-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-store-info-a {
+    text-decoration-line: none;
+    color: #303441;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-product-under-tr > td {
+    padding: 30px 0;
+}
+
+/* 오른쪽 결제 box */
+.cart-pay-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 260px;
+    height: 210px;
+    align-items: center;
+}
+
+.cart-pay-box-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 215px;
+    border: 1px solid #eceff1;
+    width: 100%;
+    padding: 20px;
+    height: 150px;
+}
+
+.cart-pay-box-top-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-pay-box-bottom-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #ff5833;
+    height: 50px;
+}
+
+.cart-pay-box-top-last-div {
+    padding-top: 10px;
+    border-top: 1px solid #eceff1;
+}
+
+.cart-pay-box-top-second-div {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.total-price-info {
+    color: #ff5833;
+}

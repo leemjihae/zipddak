@@ -1,0 +1,288 @@
+/* 테이블 전체 프레임 (헤더 + 테이블 + 페이지네이션) */
+.tableFrame {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* 필터영역 */
+.filterArea {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 22px 10px;
+    gap: 20px;
+    border: 1px solid var(--outerLine);
+    /* border-radius: 3px; */
+}
+.filterColumn {
+    width: 100%;
+}
+.filterTitle {
+    color: #6d758f;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+    margin-bottom: 5px;
+}
+.filterBody {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid var(--innerLine);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 테이블 */
+.tableArea {
+    width: 80%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; */
+}
+.tableArea > .wholeTable {
+    margin: 0 auto 20px;
+}
+.tableHeader {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* align-self: stretch; */
+    border-bottom: var(--innerLine);
+}
+
+.totalSearchBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.totalSearchBox .searchInput {
+    width: 210px;
+    height: 35px;
+}
+
+.tableBody {
+    width: 100%;
+    overflow-x: auto; /* 내용 길어질 시 자동으로 가로스크롤 */
+}
+
+table.list_table,
+table.detail_table,
+table.inquire_table {
+    width: max-content; /* 내용 크기만큼 자연 확장 */
+    min-width: 100%; /* 화면보다 좁아지지 않게 */
+    table-layout: fixed;
+
+    /* 외부 테두리  */
+    border-top: 2px solid var(--innerLine);
+    /* border-top: 2px solid #6d758f; */
+
+    border-collapse: collapse;
+    white-space: nowrap; /* 열 줄바꿈 방지 */
+
+    margin-bottom: 5px;
+}
+table.list_table th,
+table.list_table td,
+table.detail_table th,
+table.detail_table td,
+table.inquire_table th,
+table.inquire_table td,
+table.salesTable th,
+table.salesTable td,
+table.detail_info_table th,
+table.detail_info_table td {
+    padding: 8px 10px;
+    text-align: center;
+
+    /* 가로 구분선 */
+    border-bottom: 1px solid var(--innerLine);
+
+    box-sizing: border-box;
+    line-height: 20px;
+}
+table.salesTable th,
+table.salesTable td,
+table.detail_info_table th,
+table.detail_info_table td {
+    width: 25%;
+}
+
+table.list_table thead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+/* 행에 마우스 hover시 색변환 */
+/* table.list_table tbody tr:hover td:not(:has(img)) {
+    background-color: #eee;
+    cursor: pointer;
+} */
+table.list_table tbody tr:hover td {
+    background-color: #eee;
+    cursor: pointer;
+}
+table.list_table tbody tr:hover td.noData:not(:has(img)) {
+    background-color: transparent;
+    cursor: default;
+}
+
+table.detail_info_table {
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
+}
+table.detail_info_table tbody tr {
+    height: 45px;
+}
+table.detail_info_table tbody tr th {
+    background-color: #eaecf0;
+}
+
+table.detail_info_table thead th {
+    color: #667085;
+    background: #eaecf0;
+    line-height: 18px;
+}
+table.detail_info_table tbody tr {
+    height: 45px;
+}
+
+table.salesTable,
+table.settle_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.settle_table tbody td.date_cell {
+    font-weight: 500;
+}
+
+table.settle_table tfoot td {
+    border-bottom: none;
+}
+table.settle_table tfoot td:first-child {
+    font-weight: 600;
+}
+
+table.settle_table tfoot td:last-child {
+    color: red;
+}
+
+table.settle_table tbody tr:hover td:not(:has(img)) {
+    background-color: transparent;
+    cursor: default;
+}
+
+.table_border {
+    /* 외부 테두리  */
+    border: 1px solid var(--innerLine);
+    border-radius: 8px;
+}
+
+table.claim_table {
+    width: max-content; /* 내용 크기만큼 자연 확장 */
+    min-width: 100%; /* 화면보다 좁아지지 않게 */
+    table-layout: fixed;
+
+    border-collapse: collapse;
+    white-space: nowrap; /* 열 줄바꿈 방지 */
+}
+
+table.claim_table th,
+table.claim_table td {
+    border-bottom: 1px solid var(--innerLine);
+    padding: 10px;
+    text-align: center;
+}
+
+.claim_table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tr.last-of-bundle td,
+tr.last-of-single td,
+.last-of-bundle-cell {
+    border-bottom: 1px solid #303441;
+}
+
+.title_cell {
+    /* text-align: left !important; */
+
+    /* 셀 안에 텍스트 내용 길어질 경우 말줄임표 처리*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail_title_cell {
+    text-align: left !important;
+}
+
+.price_cell {
+    text-align: right;
+}
+
+.img_cell {
+    white-space: nowrap;
+    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.totalCnt {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* ****************************************
+    페이지네이션 
+***************************************** */
+.my_pagination {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.my_pagination :global(.page-item) {
+    margin: 0 4px; /* 좌우 4px 간격 */
+}
+.my_pagination :global(.page-link) {
+    border-radius: 8px !important;
+    background: transparent;
+    border: none;
+    color: #a4aec1;
+    font-size: 16px;
+    font-weight: 500;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+
+    outline: none !important;
+    box-shadow: none !important;
+}
+.my_pagination :global(.page-item.active .page-link) {
+    background: #303441;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
+.my_pagination :global(.page-link:hover) {
+    color: #ffffff;
+    background: rgba(48, 52, 65, 0.3);
+}
+.my_pagination :global(.page-link:focus),
+.my_pagination :global(.page-item.active .page-link:focus) {
+    outline: none !important;
+    box-shadow: none !important;
+}

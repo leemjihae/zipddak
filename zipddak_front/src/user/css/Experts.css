@@ -1,0 +1,121 @@
+.experts-main-div {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.experts-cate-select-bar {
+    width: 180px;
+}
+
+.experts-cate-select-span {
+    padding-left: 10px;
+}
+
+.experts-cate-select-button-div {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experts-search-expert-div {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.experts-select-major,
+.experts-default-major {
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    width: 180px;
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.experts-select-major {
+    background-color: #e7f6ff;
+}
+
+.experts-default-major {
+    background-color: transparent;
+}
+
+/* 검색 바 */
+.experts-search-bar-div {
+    width: 620px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e7f6ff;
+    border-radius: 8px;
+}
+
+.experts-search-bar-input {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+    width: 540px;
+}
+
+.experts-search-bar-input:focus {
+    border: none;
+}
+
+.experts-search-bar-button {
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+    color: #6d758f;
+}
+
+/* 추천 전문가 div */
+.experts-add-expert-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add {
+    color: #6d758f;
+}
+
+.add-experts-span {
+    color: #1c242f;
+}
+
+.experts-request-button {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #ff5833;
+    height: 35px;
+    width: 80px;
+    color: #ff5833;
+}
+
+/* 전문가 + 정렬 필터 */
+.experts-search-sort {
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.experts-search-expert-sort {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experts-add-expert-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

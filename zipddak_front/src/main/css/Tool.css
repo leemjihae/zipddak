@@ -1,0 +1,376 @@
+.Tool-card {
+    width: 177px;
+    height: 280px;
+    text-decoration-line: none;
+    color: unset; /* 부모 색상을 강제로 초기화 */
+    cursor: pointer;
+}
+
+.tool-image {
+    position: relative; /* 하트 위치를 부모 기준으로 잡기 위해 */
+    width: 177px;
+    height: 177px;
+    border-radius: 8px;
+    background-color: #eff1f5;
+    overflow: hidden;
+}
+
+.tool-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favorite-icons {
+    position: absolute; /* 절대 위치 */
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ff5833;
+    cursor: pointer;
+    background-color: none !important;
+}
+
+.tool-info {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tool-address {
+    font-size: 13px;
+}
+
+.tool-name {
+    font-size: 15px;
+    font-weight: 400;
+    font-weight: 500;
+}
+.oneday {
+    font-size: 15px;
+    color: #ff5833;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.rental-price {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* ------------------------------------------------------- */
+
+.Tool-card-m {
+    /* width: 225px; */
+    /* height: 345px; */
+    align-items: center;
+    text-decoration-line: none;
+    color: unset; /* 부모 색상을 강제로 초기화 */
+    border: 1px solid #eff1f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+     cursor: pointer;
+}
+
+.tool-image-m {
+    position: relative; /* 하트 위치를 부모 기준으로 잡기 위해 */
+    width: 195px;
+    height: 195px;
+    border-radius: 8px;
+    background-color: #eff1f5;
+     overflow: hidden;
+}
+
+.tool-image-m img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tool-info-m {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 8px;
+    gap: 8px;
+}
+
+.tool-address-m {
+    font-size: 12px;
+}
+
+.tool-name-m {
+    font-size: 13px;
+    font-weight: 500;
+}
+.oneday-m {
+    font-size: 15px;
+    color: #ff5833;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.rental-price-m {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tool-reaction-m {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    color: #6D758F;
+}
+
+.chats,
+.favs {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.chaticon {
+    font-size: 13px;
+}
+
+.favicon {
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.dot {
+    margin: 0 2px;
+}
+
+/* ------------------------------------------------------- */
+
+.Tool-card-L {
+    /* width: 285px; */
+    /* height: 345px; */
+    text-decoration-line: none;
+    color: unset; /* 부모 색상을 강제로 초기화 */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+     cursor: pointer;
+}
+
+.tool-image-L {
+    position: relative; /* 하트 위치를 부모 기준으로 잡기 위해 */
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: #eff1f5;
+     overflow: hidden;
+}
+
+.tool-image-L img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tool-status-badge {
+    background-color: #6D758F;
+    height: 34px;
+    padding: 12px;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute; /* 절대 위치 */
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+   
+}
+
+.tool-info-L {
+   width: 100%;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tool-address-L {
+    font-size: 13px;
+}
+
+.tool-name-L {
+    font-size: 15px;
+    font-weight: 500;
+}
+.oneday-L {
+    font-size: 16px;
+    color: #ff5833;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.rental-price-L {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tool-reaction-L {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 24px;
+    color: #6D758F;
+}
+
+/* 마이페이지 */
+.myTool {
+    text-decoration-line: none !important;
+    color: unset; /* 부모 색상을 강제로 초기화 */
+    cursor: pointer;
+}
+
+.myTool-card {
+    width: 920px;
+    height: 190px;
+    border: #eff1f5 1px solid;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.myTool-image {
+    width: 150px;
+    height: 150px;
+
+    position: relative; /* 하트 위치를 부모 기준으로 잡기 위해 */
+    border-radius: 8px;
+    background-color: #eff1f5;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.myTool-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.myTool-button {
+    gap: 8px;
+}
+
+.myTool-bottom {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.myTool-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.myTool-category {
+    font-size: 14px;
+    color: #667085;
+}
+
+.myTool-price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.myTool-button {
+    display: flex;
+    gap: 10px;
+}
+
+.myTool-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myTool-rabel {
+    justify-content: space-between;
+}
+
+.myTool-box {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.ToolMyBox {
+    gap: 50px;
+}
+
+.rentalBox {
+    gap: 10px;
+}
+
+.myTool-rental-status,
+.myTool-category {
+    font-weight: 600;
+}
+
+.myTool-name {
+    margin-top: 10px;
+}
+
+.titleMyTool {
+    gap: 20px;
+}
+
+.rentalDisable {
+    background-color: #eff1f5 !important;
+}
+
+.rentalDisable:hover {
+   border: 1px solid #e1e4ed;
+    background: #fff;
+    color: #303441;
+}
+
+.orangeColor {
+    color: #ff5833;
+}
+
+.rentalAble:hover {
+    color: #303441;
+    background-color: #eff1f5;
+    border: #eff1f5;
+}
+
+.rentalAble .text::before {
+    content: "대여가능";
+}
+
+.rentalAble:hover .text::before {
+    content: "대여중지";
+}
+
+.iconNoneBack {
+   background-color: transparent !important; 
+}
+
+
+

@@ -1,0 +1,61 @@
+.expert-div {
+    width: 255px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #eff1f5;
+    border-radius: 16px;
+
+    color: unset; /* 부모 색상을 강제로 초기화 */
+    text-decoration-line: none;
+    gap: 10px;
+}
+
+.expert-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+}
+.expert-img-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.expert-name-div {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.expert-star {
+    font-size: 16px;
+    color: #f7c444;
+    margin-right: 5px;
+}
+
+.expert-star-div {
+    display: flex;
+    align-items: center;
+    height: 19px;
+}
+
+.expert-review-count {
+    color: #6a7685;
+}
+
+.expert-intro {
+    color: #8e8e93;
+}
+
+.expert-career-div {
+    height: 19px;
+    display: flex;
+}
+
+.expert-info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

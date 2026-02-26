@@ -1,0 +1,99 @@
+.accordionFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-self: stretch; */
+    width: inherit;
+
+    border: 1px solid var(--outerLine);
+    border-radius: 8px;
+
+    box-shadow: 0 0.5px 2px 0 rgba(25, 33, 61, 0.1);
+    margin-bottom: 10px;
+}
+
+.acco_header {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--outerLine);
+    width: inherit;
+    padding: 20px;
+    gap: 10px;
+    font-size: 12px;
+    border-radius: 8px 8px 0 0;
+    background-color: rgba(255, 87, 51, 0.5);
+}
+
+.acco_body {
+    width: inherit;
+    padding: 15px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 15px;
+}
+
+.accordionToggleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-self: stretch; */
+    width: inherit;
+    gap: 5px;
+}
+
+.accordion_opened {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    width: inherit;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 87, 51, 0.5);
+    box-shadow: 0 0.5px 2px 0 rgba(25, 33, 61, 0.1);
+}
+
+.accordion_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.accordion_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    width: inherit;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 87, 51, 0.5);
+    box-shadow: 0 0.5px 2px 0 rgba(25, 33, 61, 0.1);
+}
+
+.accordion_body {
+    width: inherit;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    border: 1px solid var(--outerLine);
+    box-shadow: 0 0.5px 2px 0 rgba(25, 33, 61, 0.1);
+    border-radius: 8px;
+    gap: 30px;
+}
+
+.claim_detail_body {
+    width: inherit;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 15px;
+}
+
+.section_top_divider {
+    border-top: 1px solid var(--innerLine);
+}

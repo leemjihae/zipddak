@@ -1,0 +1,121 @@
+.admin-sidebar {
+    padding: 30px 20px 10px 20px;
+    width: 300px;
+    background-color: #2f3545;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* height 제거 */
+}
+
+.admin-sidebar-inner-div {
+    width: 225px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-info {
+    height: 72px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.logo-box {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-sidebar-icon {
+    font-size: 25px;
+}
+
+/* Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-sidebar-menu-li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-item button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+
+    padding: 0;
+}
+
+.menu-item button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sub-menu {
+    list-style: none;
+    padding-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sub-menu li {
+    font-size: 14px;
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.sub-menu button {
+    height: 30px;
+    padding-left: 10px;
+}
+
+.sidebar-bottom {
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff5b5b;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #ff3b3b;
+}

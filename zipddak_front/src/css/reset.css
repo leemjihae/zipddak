@@ -1,0 +1,140 @@
+/* 기본 스타일 초기화 Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+/* HTML5 요소 기본 display 설정 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* 기본 body 스타일 */
+body {
+    line-height: 1;
+}
+
+/* 리스트 불릿 제거 */
+ol,
+ul {
+    list-style: none;
+}
+
+/* 인용 부호 제거 */
+blockquote,
+q {
+    quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+/* 테이블 기본 스타일 초기화 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* a링크 밑줄 제거 */
+a {
+    text-decoration: none !important;
+    color: #303441 !important;
+}

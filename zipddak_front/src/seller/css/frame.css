@@ -1,0 +1,105 @@
+.mainFrame {
+    border: 1px solid var(--outerLine);
+    border-radius: 8px;
+}
+
+/* *********************************
+    등록,수정화면 프레임
+*********************************** */
+.regiFrame {
+    width: 40%;
+}
+
+.headerFrame {
+    border-bottom: 1px solid var(--outerLine);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.bodyFrame {
+    width: 100%;
+    padding: 15px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.descript {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.position-relative {
+    width: 100%;
+}
+
+.input_set {
+    display: flex;
+}
+.input_set div:first-child {
+    margin-right: 10px;
+}
+
+.unit_set {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.unit {
+    margin-right: 5px;
+}
+
+.border_top {
+    border-top: 1px solid var(--outerLine);
+    padding-top: 15px;
+}
+
+.img_previewBox {
+    width: 100%;
+    /* padding: 10px; */
+    /* border: 1px solid var(--innerLine); */
+    /* border-radius: 6px; */
+}
+
+.preview-wrap {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.preview-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--innerLine);
+}
+
+.delete-btn {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    padding: 2px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete-btn i {
+    color: red;
+    font-size: 12px;
+}
+/* *********************************
+    리스트 프레임
+*********************************** */
+.listFrame {
+    width: 100%;
+}

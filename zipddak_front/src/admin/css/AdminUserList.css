@@ -1,0 +1,744 @@
+.admin-body-div {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* 전체 화면 높이 최소 확보 */
+    align-items: stretch; /* 기본값, 생략 가능 */
+}
+
+.admin-user-count-card {
+    width: 99px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #303441;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-user-count-card span {
+    color: #ffffff;
+}
+
+.admin-userList-top-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+.admin-userList-div {
+    width: 100%;
+    min-width: 1140px;
+}
+
+.admin-userList-top-div-right {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-middle-header {
+    height: 60px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+.admin-filter-line-div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eaecf0;
+
+    padding-right: 24px;
+}
+
+.admin-userList-radio-div {
+    padding-left: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.admin-radio {
+    accent-color: #ff5833;
+    zoom: 1.3;
+}
+
+.admin-radio-div {
+    display: flex;
+    align-items: center;
+}
+
+.admin-userList-filter-select {
+    border-radius: 5px;
+    border: 1px solid #dde1eb;
+    width: 155px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+
+    color: #6a7685;
+}
+
+.admin-userList-search-div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #6a7685;
+    border-radius: 5px;
+    padding-left: 8px;
+
+    height: 30px;
+}
+
+.admin-userList-search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.admin-userList-search-input {
+    border: none;
+    height: 26px;
+}
+
+.admin-userList-filter-right {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-userList-search-button,
+.admin-userList-clean-button {
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+}
+
+.admin-userList-search-button {
+    border: none;
+    background-color: #303441;
+    color: #ffffff;
+}
+
+.admin-userList-clean-button {
+    background-color: #ffffff;
+    border: 1px solid #303441;
+}
+
+.admin-userList-table {
+    width: 100%;
+}
+
+.admin-userList-table-div {
+    height: 100%;
+}
+
+.admin-userList-table > thead td {
+    background-color: #fcfcfd;
+}
+
+.admin-userList-table td {
+    text-align: center;
+    height: 44px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.admin-userList-paging-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.admin-userList-paging-button-div {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-userList-paging-curpage-button,
+.admin-userList-paging-button {
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.admin-userList-paging-curpage-button {
+    border: 1px solid #ff5833;
+    border-radius: 5px;
+    color: #ff5833;
+    font-weight: 700;
+}
+
+.admin-userList-paging-button {
+    border: none;
+}
+
+.admin-userList-nextbutton {
+    border: none;
+    background-color: transparent;
+    color: #23262a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 전문가 */
+/* 전문가 */
+/* 전문가 */
+/* 전문가 */
+/* 전문가 */
+/* 전문가 */
+/* 전문가 */
+
+.admin-middle-filter {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-expert-default-major,
+.admin-expert-select-major {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.admin-expert-select-major {
+    font-weight: 700;
+    color: #ff5833;
+}
+
+.admin-expert-default-major {
+    font-weight: 500;
+}
+
+.user-state-badge {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.user-state-code-1,
+.user-state-code-2,
+.user-state-code-3 {
+    height: 22px;
+
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-state-code-1 {
+    background-color: #ecfdf3;
+    width: 51px;
+}
+
+.user-state-code-2 {
+    background-color: #ffd1d2;
+    width: 73px;
+}
+
+.user-state-code-3 {
+    background-color: #f2f4f7;
+    width: 51px;
+}
+
+.user-state-code-1 > span,
+.request-state-code-1 > span,
+.rental-state-code-1 > span {
+    color: #037847;
+}
+
+.user-state-code-2 > span,
+.request-state-code-2 > span,
+.rental-state-code-2 > span {
+    color: #ff517a;
+}
+.user-state-code-3 > span,
+.request-state-code-3 > span,
+.rental-state-code-3 > span {
+    color: #364254;
+}
+
+/* 자재판매업체 */
+/* 자재판매업체 */
+/* 자재판매업체 */
+/* 자재판매업체 */
+/* 자재판매업체 */
+/* 자재판매업체 */
+/* 자재판매업체 */
+
+.admin-middle-filter-store {
+    display: flex;
+}
+
+.store-product-type {
+    height: 100%;
+    border-right: 1px solid #eaecf0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.admin-middle-header-store {
+    height: 60px;
+    padding-left: 9px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+/* 전환신청 / 입점신청 */
+/* 전환신청 / 입점신청 */
+/* 전환신청 / 입점신청 */
+/* 전환신청 / 입점신청 */
+/* 전환신청 / 입점신청 */
+/* 전환신청 / 입점신청 */
+/* 전환신청 / 입점신청 */
+
+.admin-userList-switchId-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.admin-userList-switchId-modal-table-trtd {
+    width: 120px;
+}
+
+.admin-userList-switchId-modal-imgs {
+    width: 120px;
+    height: 175px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.admin-userList-switchId-modal-imgs-div {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.admin-custom-modal {
+    --bs-modal-width: 900px;
+}
+
+.admin-userList-modal-radio {
+    accent-color: #ff5833;
+    zoom: 1.3;
+}
+
+.admin-userList-modal-radio-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-userList-modal-radio-div-in {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.admin-userList-switchId-modal-business-down {
+    width: 76px;
+    height: 34px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: #303441;
+    color: #ffffff;
+}
+
+.admin-userList-modal-reason-input {
+    width: 240px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #6a7685;
+    padding-left: 10px;
+}
+
+.admin-userList-switchId-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.admin-userList-switchId-switch-table {
+    margin-top: 20px;
+}
+
+.admin-userList-switchId-backBtn {
+    border: 1px solid #303441;
+    background-color: transparent;
+    border-radius: 4px;
+    height: 33px;
+    width: 47px;
+}
+
+.admin-userList-switchId-firstTd {
+    border-bottom: 1px solid #303441;
+    padding-bottom: 10px;
+}
+
+.admin-userList-switchId-endBtn {
+    border: none;
+    background-color: #303441;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.admin-userList-settlement-endBtn {
+    border: none;
+    background-color: #303441;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 47px;
+}
+
+.admin-userList-switchId-modal-table,
+.admin-userList-settlement-modal-table {
+    width: 100%;
+}
+
+.admin-userList-switchId-modal-table td,
+.admin-userList-settlement-modal-table td {
+    height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.admin-userList-settlement-modal-table td {
+    text-align: center;
+}
+
+.request-state-code-1,
+.request-state-code-2,
+.request-state-code-3 {
+    height: 22px;
+    width: 51px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-state-code-1 {
+    background-color: #ecfdf3;
+}
+
+.request-state-code-2 {
+    background-color: #ffd1d2;
+}
+
+.request-state-code-3 {
+    background-color: #f2f4f7;
+}
+
+/* 대여내역 */
+/* 대여내역 */
+/* 대여내역 */
+/* 대여내역 */
+/* 대여내역 */
+/* 대여내역 */
+/* 대여내역 */
+
+.admin-rental-count-card {
+    width: 203px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #303441;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-rental-count-card span {
+    color: #eceff1;
+    background-color: #303441;
+}
+
+.admin-filter-line-div-rental {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+
+    border-bottom: 1px solid #eaecf0;
+
+    padding-right: 24px;
+}
+
+.admin-filter-line-div-settlement {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+
+    border-bottom: 1px solid #eaecf0;
+
+    padding-right: 24px;
+}
+
+.admin-filter-line-div-under {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-filter-line-div-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-filter-input-date {
+    width: 131px;
+    height: 30px;
+}
+
+.rental-state-code-1,
+.rental-state-code-2,
+.rental-state-code-3 {
+    height: 22px;
+    width: 51px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rental-state-code-1 {
+    background-color: #ecfdf3;
+    width: 73px;
+}
+
+.rental-state-code-2 {
+    background-color: #ffd1d2;
+    width: 73px;
+}
+
+.rental-state-code-3 {
+    background-color: #f2f4f7;
+    width: 62px;
+}
+
+/* 신고내역 */
+/* 신고내역 */
+/* 신고내역 */
+/* 신고내역 */
+/* 신고내역 */
+/* 신고내역 */
+/* 신고내역 */
+
+/* 판매 내역 */
+/* 판매 내역 */
+/* 판매 내역 */
+/* 판매 내역 */
+/* 판매 내역 */
+/* 판매 내역 */
+/* 판매 내역 */
+
+.admin-sales-filter-right {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-filter-sales-line-div {
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    border-bottom: 1px solid #eaecf0;
+
+    padding-right: 24px;
+}
+
+.admin-filter-sales-line-first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales-state-code-1,
+.sales-state-code-2,
+.sales-state-code-3,
+.sales-state-code-4,
+.sales-state-code-5,
+.sales-state-code-6 {
+    height: 22px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales-state-code-1 {
+    color: #037847;
+    background-color: #ecfdf3;
+    width: 73px;
+}
+
+.sales-state-code-2 {
+    color: #2f4fb7;
+    background-color: #d4ddfa;
+    width: 63px;
+}
+
+.sales-state-code-3 {
+    color: #550f61;
+    background-color: #ecbbf4;
+    width: 78px;
+}
+
+.sales-state-code-4 {
+    color: #62680a;
+    background-color: #e7ec9c;
+    width: 73px;
+}
+
+.sales-state-code-5 {
+    color: #865202;
+    background-color: #f2cb90;
+    width: 73px;
+}
+
+.sales-state-code-6 {
+    color: #9f2800;
+    background-color: #f2b49f;
+    width: 73px;
+}
+
+/* 결제 내역 */
+/* 결제 내역 */
+/* 결제 내역 */
+/* 결제 내역 */
+/* 결제 내역 */
+/* 결제 내역 */
+/* 결제 내역 */
+.payment-state-code-1,
+.payment-state-code-2,
+.payment-state-code-3 {
+    height: 22px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-state-code-1 {
+    color: #037847;
+    background-color: #ecfdf3;
+    width: 73px;
+}
+
+.payment-state-code-2 {
+    color: #ff517a;
+    background-color: #ffd1d2;
+    width: 50px;
+}
+
+.payment-state-code-3 {
+    color: #364254;
+    background-color: #f2f4f7;
+    width: 73px;
+}
+
+/* 멤버십 내역 */
+/* 멤버십 내역 */
+/* 멤버십 내역 */
+/* 멤버십 내역 */
+/* 멤버십 내역 */
+/* 멤버십 내역 */
+/* 멤버십 내역 */
+
+.membership-state-code-1,
+.membership-state-code-2 {
+    height: 22px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership-state-code-1 {
+    color: #037847;
+    background-color: #ecfdf3;
+    width: 50px;
+}
+
+.membership-state-code-2 {
+    color: #364254;
+    background-color: #f2f4f7;
+    width: 50px;
+}
+
+/* 문의 내역 */
+/* 문의 내역 */
+/* 문의 내역 */
+/* 문의 내역 */
+/* 문의 내역 */
+/* 문의 내역 */
+/* 문의 내역 */
+
+.inquiry-state-code-1,
+.inquiry-state-code-2 {
+    height: 22px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inquiry-state-code-1 {
+    color: #037847;
+    background-color: #ecfdf3;
+    width: 73px;
+}
+
+.inquiry-state-code-2 {
+    color: #364254;
+    background-color: #f2f4f7;
+    width: 73px;
+}
+
+.admin-settlement-select,
+.admin-settlement-default {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.admin-settlement-select {
+    color: #ff5733;
+}

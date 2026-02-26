@@ -1,0 +1,230 @@
+.ProductOrder-main-div {
+    width: 1200px;
+    display: flex;
+    gap: 40px;
+}
+
+.productOrder-body-div {
+    display: flex;
+    gap: 40px;
+}
+
+.productOrder-left {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.product-order-check-span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-order-check-store-div {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    border: 1px solid #eceff1;
+    height: 40px;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+}
+
+.product-order-check-detail {
+    display: flex;
+    border: 1px solid #eceff1;
+    border-top: none;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.product-order-check-img-div {
+    display: flex;
+    align-items: center;
+}
+.product-order-check-img {
+    width: 65px;
+    height: 65px;
+    border: 1px solid black;
+}
+
+.product-order-check-buy-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-order-check-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-order-check-buy-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.product-order-check-input {
+    height: 38px;
+    width: 240px;
+}
+
+.product-order-info-table,
+.product-order-check-address-table {
+    border-collapse: separate; /* 간격 적용하려면 separate로 */
+    border-spacing: 0 5px; /* 세로 간격: 5px, 가로 간격: 0 */
+}
+
+.product-order-info-table td,
+.product-order-check-address-table td {
+    text-align: center;
+}
+
+.product-order-info-table td,
+.product-order-check-address-table td {
+    padding: 8px 24px 8px 0; /* 상하 8px, 좌우 12px */
+}
+
+.product-order-check-input-email-div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 510px;
+}
+.email-icon {
+    font-size: 20px;
+}
+
+.product-order-check-input-tel-div {
+    display: flex;
+}
+
+.product-order-check-input-tel-first {
+    width: 55px;
+    margin-right: 10px;
+}
+.product-order-check-input-tel-second {
+    height: 38px;
+    width: 175px;
+}
+
+.product-order-check-email-select {
+    width: 240px;
+    height: 38px;
+    border-color: #dde1eb; /* 회색 계열 */
+    color: #6d758f;
+    border-radius: 5px;
+    outline: none;
+}
+
+.product-order-check-address-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-order-check-address-same-button {
+    border: none;
+    background-color: transparent;
+    color: #ff5833;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-order-check-input-address-button-div {
+    display: flex;
+}
+
+.product-order-check-input-address-button {
+    font-size: 13px;
+    font-weight: 600;
+    width: 55px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #ff5833;
+}
+
+.product-order-check-input-address-input {
+    height: 38px;
+    width: 175px;
+}
+
+.product-order-check-input-address,
+.product-order-check-input-address-detail {
+    height: 38px;
+    width: 510px;
+}
+
+.product-order-check-input-save-address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.height-38 {
+    height: 38px;
+}
+
+/* 우측 결제 폼 */
+.product-order-form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    height: 415px;
+    width: 360px;
+}
+
+.product-order-form-div-top {
+    border: 1px solid #eceff1;
+}
+.order-price {
+    color: #ff5833;
+}
+
+.product-order-form-div-intop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+.product-order-form-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-order-from-bottom-content {
+    padding: 10px 30px;
+    background-color: #f7f9fa;
+}
+
+.product-order-from-bottom-content * {
+    color: #8b959d;
+}
+
+.product-order-from-bottom-content-indiv {
+    margin-top: 10px;
+}
+
+.product-order-from-bottom-button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #ff5833;
+}
+
+.count-button-style {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}

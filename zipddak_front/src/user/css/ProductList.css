@@ -1,0 +1,123 @@
+.body-div {
+  min-width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+
+.productList-main-div {
+  width: 1200px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+
+.productList-search-bar {
+  display: flex;
+  width: 620px;
+  height: 45px;
+  justify-content: center;
+  border: 1px solid #f1f3f7;
+  border-radius: 8px;
+
+  margin-top: 50px;
+}
+
+.productList-search-input {
+  outline: none !important;
+  box-shadow: none !important;
+  width: 560px;
+  border: none;
+  height: 43px;
+  padding-left: 20px;
+}
+
+.productList-search-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.productList-search-btn {
+  border: none;
+  background-color: transparent;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.cate-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.p-cate-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 82px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.p-cate-img {
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+.p-cate-span {
+  font-size: 13px;
+  margin-top: 13px;
+}
+
+/* 추가 카테고리, 정렬 필터 */
+.middle-cate,
+.click-middle-cate {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 0 14px;
+  height: 50px;
+}
+
+.middle-cate {
+  border-bottom: 2px solid #eff1f5;
+}
+
+.click-middle-cate {
+  border-bottom: 2px solid #293341;
+}
+
+.cate-filter {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-click-filter,
+.product-filter {
+  height: 33px;
+  font-size: 12px;
+  border: none;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.filter-div {
+  display: flex;
+  gap: 7px;
+}
+
+.product-click-filter {
+  background-color: #ff5833;
+  color: #ffffff;
+}
+
+.product-filter {
+  background-color: #f1f3f7;
+  color: #6d758f;
+}

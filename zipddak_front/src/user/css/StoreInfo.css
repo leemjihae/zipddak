@@ -1,0 +1,74 @@
+.StoreInfo-main-div {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.store-info-top-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-info-img {
+    width: 280px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.store-info-top-left {
+    width: 890px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.store-info-name-report {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.store-report-button {
+    border: none;
+    background-color: transparent;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.store-info-under-div {
+    display: flex;
+    align-items: center;
+}
+
+.store-best-product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.store-item-cate-div {
+    display: flex;
+    gap: 15px;
+}
+
+.store-select-cate,
+.store-default-cate {
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+
+.store-select-cate {
+    color: #ff5833;
+}
+
+.store-default-cate {
+    color: #303441;
+}

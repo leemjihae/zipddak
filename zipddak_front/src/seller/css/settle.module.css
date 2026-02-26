@@ -1,0 +1,23 @@
+.settle_detailFrame {
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.settle_detail_title {
+    font-size: 18px;
+    color: #6f6964;
+    width: 25% !important;
+    border: none;
+    border-radius: 0;
+    /* border-bottom: solid #aaaaaa 1px; */
+    border-bottom: solid #dee2e6 1px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+}

@@ -1,0 +1,242 @@
+:root {
+    --fontColor: #303441; /* 기본 글자색 */
+    --base: #ffffff; /* 메뉴 폰트 색상 : 흰색 */
+    --subfont: #6d758f; /* 서브메뉴 폰트 색상 : 검은색 */
+    --footer: #999; /* 푸터 폰트 색상 : 진한 회색 */
+    --mainColor: #ff5733;
+    --subcolor: #f4f9fd;
+    --shadowColor: rgba(255, 87, 51, 0.25);
+    --shadowColor2: rgba(255, 87, 51, 0.45);
+    --hoverColor: #ee5432;
+    --clicked: #e24c2b;
+    --innerLine: #e3e3e3;
+    --outerLine: #e1e4ed;
+}
+#root {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+}
+.main {
+    padding: 20px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+/* readOnly일 때 강조효과 없애기*/
+input[readonly],
+input[readonly]:focus {
+    cursor: default;
+    border-color: var(--outerLine) !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.readonlyText {
+    cursor: not-allowed;
+}
+
+input[type="date"] {
+    color: var(--fontColor);
+}
+
+textarea {
+    width: 100%;
+    resize: none !important;
+}
+
+.title_line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input_title {
+    min-width: 90px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.sub_title {
+    min-width: 100px;
+    font-weight: 500;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.required {
+    color: red;
+    font-weight: 600;
+    margin: 0 3px;
+}
+
+.btn_part {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.primary-button i {
+    background-color: var(--mainColor);
+    color: var(--base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.sub-button {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    border-radius: 4px;
+    border: 1px solid var(--mainColor);
+    background: var(--base);
+
+    font-family: "Pretendard Variable", sans-serif;
+    color: var(--mainColor);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.sub-button i {
+    background-color: var(--base);
+    color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-button {
+    display: flex;
+    /* width: fit-content; */
+    width: 35px;
+    height: 32px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--mainColor);
+    background: var(--mainColor);
+    font-family: "Pretendard Variable", sans-serif;
+    color: var(--base);
+    text-align: center;
+    font-size: 12px;
+    /* margin-right: 5px; */
+
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    line-height: normal !important;
+    flex-direction: row !important;
+}
+.small-button i {
+    font-size: 13px;
+    color: var(--base);
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 3px;
+}
+
+.small-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 32px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--mainColor);
+    background: var(--base);
+    text-align: center;
+    margin-right: 5px;
+
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    line-height: normal !important;
+    flex-direction: row !important;
+}
+.small-button2 i {
+    font-size: 13px;
+    color: var(--mainColor);
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 3px;
+}
+
+.primary-button:hover,
+.primary-button:hover i,
+.small-button:hover {
+    background: var(--hoverColor);
+}
+.primary-button:active,
+.primary-button:active i,
+.small-button:active {
+    background: var(--clicked);
+}
+
+.sub-button:active i,
+.sub-button:hover i {
+    background: transparent;
+}
+
+.sub-button:hover,
+.small-button2:hover {
+    /* background: #f1f3f7; */
+    background: var(--shadowColor);
+}
+.sub-button:active,
+.small-button2:active {
+    /* background: #e1e4ed; */
+    background: var(--shadowColor2);
+    /* color: var(--base); */
+}
+.saveBtn {
+    width: 100%;
+}
+
+/* title기능 커스텀 */
+.tippy-box[data-theme~="custom"] {
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+/* custom 테마 + placement가 top일 때 */
+.tippy-box[data-theme~="custom"] > .tippy-arrow::before {
+    border-top-color: var(--mainColor) !important; /* 위쪽 방향일 때 */
+}
+
+.blankSpace {
+    color: transparent;
+}
+
+.addr_column {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    height: auto;
+}
+
+hr.section_divider {
+    align-self: stretch;
+}

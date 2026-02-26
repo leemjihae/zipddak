@@ -1,0 +1,93 @@
+.base_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.detailFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px;
+    gap: 15px;
+    border: 1px solid var(--outerLine);
+    border-radius: 5px;
+}
+
+.info_column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+.info_cell {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.info_line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pd_list_table {
+    width: 100%;
+}
+
+.product_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ****************************
+
+***************************** */
+
+.claimHistory {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info_list_section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+}
+
+.imgParts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.blockParts {
+    gap: 10px;
+}
+.flexParts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.processFlow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

@@ -1,0 +1,324 @@
+.regTool-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.regTool {
+    width: 1200px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.applyTool {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.r-title {
+    width: 910px;
+    height: 70px;
+    padding: 25px;
+    border: 1px solid #eff1f5;
+    border-radius: 8px 8px 0 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.regToolForm {
+    width: 910px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid #eff1f5;
+}
+
+.form-control,
+.location {
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.o-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-check {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.check-col,.won {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    gap: 12px;
+}
+
+.won {
+    margin-right: 20px;
+}
+
+.check-detail {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6A7685;
+}
+
+.wonInput {
+    width: 260px;
+}
+
+.ttextarea {
+    min-height: 170px !important;
+    resize: none;
+    padding: 12px !important;
+}
+
+.post-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+    /* border: #eff1f5 1px solid;
+    border-radius: 8px;
+    padding: 10px; */
+}
+
+.zonecodeInput {
+    width: 260px !important;
+}
+
+.mapPinI {
+    padding: 5px 10px !important;
+}
+
+.trade {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border: 1px solid #eff1f5;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.toolRegiMessage {
+    width: 100%;
+    border: none;
+}
+
+.toolPostI {
+    right: 5px;
+}
+
+
+.location-box {
+    width: 250px;
+}
+
+.btn-col {
+    width: 910px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin: 40px 0;
+}
+
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgDeleteButton {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.733);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.detail-img-list {
+    gap: 20px;
+}
+
+.thumbnail.add {
+  border: #B6BCC9 1px dotted;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: 500;
+    width: 70px;
+}
+
+
+.pinput {
+    width: 300px;
+}
+
+.hypen {
+    padding-top: 15px;
+    margin: 16px;
+}
+
+.period {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.payOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 68px;
+    border: 1px solid #eff1f5;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #6A7685;
+    cursor: pointer;
+}
+
+.payOption:active,
+.payOption.active {
+    border: 2px solid #FF5833;
+    color: #FF5833;
+    font-weight: 600;
+}
+
+.moneyGap {
+   gap: 5px; 
+}
+
+.pay {
+    gap: 16px;
+}
+
+.totalRental {
+    gap: 5px;
+}
+
+.rental-period {
+    font-weight: 600;
+    color: #FF5833;
+}
+
+.total-rental-label,
+.total-rental-price {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.total-rental-price {
+    color: #FF5833;
+}
+
+.wide {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.appTool-userbox {
+    width: 230px;
+    gap: 20px;
+}
+
+.tuserbox {
+    width: 100%;
+    height: 90px;
+    padding: 24px 20px;
+    border: #F1F3F7 1px solid;
+    border-radius: 8px;
+}
+
+.toolBank {
+    width: 400px !important;
+}
+
+.sbSelect {
+    width:260px !important;
+}
+
+.pqSelect {
+    width: 345px !important;
+}
+
+.myToolCards {display: grid;
+    grid-template-columns: 1fr; /* 1열 */
+    gap: 20px;                 /* 카드 간 간격 */
+    margin: 40px 0;}
+
+
+.Rentalmap {
+    width: 300px;
+    height: 200px;
+    background-color: #eff1f5;
+}
+
+.appTool-btn {
+    margin: 40px 0;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.oFont {
+    font-size: 15px;
+    font-weight: 500;
+}
+

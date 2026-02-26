@@ -1,0 +1,409 @@
+.tool-container,
+.map-bottom-list {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.map-bottom-list {
+    padding: 0 16px;
+}
+
+/* 검색 */
+.filters {
+    width: 1200px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 40px 0;
+}
+
+.tool-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.t-filter {
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    width: 790px;
+    height: 43px;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid #eff1f5;
+    border-radius: 8px;
+}
+
+.f-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.keyword {
+    border: none;
+    outline: none;
+    width: 450px;
+}
+
+.location-box {
+    width: 235px;
+    height: 43px;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid #eff1f5;
+    border-radius: 8px;
+}
+
+.location {
+    border: none;
+    outline: none;
+    width: 150px; 
+}
+
+.mapBtn {
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+
+.trade-main {
+  position: relative;
+  width: 165px;
+}
+
+.trade-select {
+  width: 100%;
+  height: 43px;
+  padding: 0 16px;
+  border: 1px solid #eff1f5;
+  border-radius: 8px;
+  outline: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.trade-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.f-category {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+}
+
+/* 지도에서 찾기 */
+.findByMap {
+    width: 1200px;
+    padding: 0 16px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: #eff1f5 1px solid;
+}
+
+.title-main {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 32px;
+}
+
+.map-show {
+    color: #ff5833;
+    cursor: pointer;
+}
+
+.map-close {
+    color: #303441;
+    cursor: pointer;
+}
+
+.maplist {
+  max-height: 0;
+  overflow: hidden;
+
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    max-height 0.3s ease,   /* 👈 닫힐 때 딜레이 */
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.maplist.open {
+  max-height: 480px;
+
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+
+  transition:
+    max-height 0.3s ease,        /* 👈 열릴 때 즉시 */
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.map {
+    width: 825px;
+    height: 480px;
+    background-color: #eff1f5;
+    border-radius: 8px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool-h {
+    /* width: 330px; */
+    width: 400px;
+    height: 130px;
+    border: #eff1f5 1px solid;
+    border-radius: 8px; 
+    display: flex;
+    padding: 15px;
+    gap: 12px;
+    position: relative;
+
+    text-decoration-line: none;
+    color: unset; /* 부모 색상을 강제로 초기화 */
+    cursor: pointer;
+}
+
+.tool-image-h {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #eff1f5;
+}
+
+.tool-image-h img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favorite-iconh {
+    position: absolute; /* 절대 위치 */
+    top: 6px;
+    right: 12px;
+    font-size: 24px;
+    color: #ff5833;
+    cursor: pointer;
+}
+
+.tool-info-h {
+    /* width: 100%; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tool-address-h {
+    font-size: 12px;
+}
+
+.tool-name-h {
+    font-size: 15px;
+    font-weight: 500;
+}
+.oneday-h {
+    font-size: 15px;
+    color: #ff5833;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.rental-price-h {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.c-btn {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.m-btn {
+    width: 40px;
+    height: 40px;
+    border: #eff1f5 1px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.m-btn:active {
+    background-color: #eff1f5;
+}
+
+/* 정렬기준 */
+.listBy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.by {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* height: 32px; */
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #F2F2F7;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.bbtn.active,
+.bbtn:active {
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #ff5833;
+}
+
+.regibtn,
+.btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.hiddenTool {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+}
+
+/* 카드 리스트 */
+.toolMaincards {
+    width: 100%;
+    margin: 40px 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.moreBtn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+
+    color: #757575;
+    font-size: 14px;
+    font-weight: 600;
+    border: #F2F2F7 1px solid;
+    border-radius: 16px;
+
+    cursor: pointer;
+}
+
+.moreBtn:active {
+    background-color: #eff1f5;
+}
+
+.resetToolMain {
+    justify-content: space-between;
+}
+
+.resetToolFilter {
+    cursor: pointer;
+    gap: 5px;
+}
+
+.toolMainSearch {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.mainLine{
+        width: "100%";
+        height: "10px";
+        border-top: "#eff1f5 1px solid";
+        margin: "10px 0";
+    }
+
+.custom-overlay {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  font-family: sans-serif;
+}
+
+.custom-overlay button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #ff5833;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

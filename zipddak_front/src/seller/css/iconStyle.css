@@ -1,0 +1,25 @@
+.bi-cash-coin {
+    font-size: 44px;
+    color: var(--subfont);
+}
+
+.header .nav_menu .large_menu .bi-house-door,
+.header .nav_menu .large_menu .bi-chevron-down,
+.header .dropdown_menu1 i,
+.header .user_info .bi-chevron-down {
+    margin: 0 5px;
+    color: var(--fontColor);
+}
+
+.main .bi-plus-square {
+    margin: 0 5px;
+}
+
+.disabled_icon {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.bi.fileDownIcon {
+    font-size: 18px;
+}

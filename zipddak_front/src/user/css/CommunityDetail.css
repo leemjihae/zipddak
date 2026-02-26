@@ -1,0 +1,207 @@
+.ComDetail-container,
+.CommunityForm-container,
+.comList-container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-cm {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.row-cm {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.profileImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f1f3f7;
+}
+
+.small {
+    width: 32px;
+    height: 32px;
+}
+
+.comTop {
+    margin: 40px 0;
+    gap: 12px;
+}
+
+.ComBody {
+    margin: 20px 0;
+    padding-bottom: 40px;
+    border-bottom: #f1f3f7 1px solid;
+    gap: 14px;
+}
+
+.UserInfo {
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: #f1f3f7 1px solid;
+    margin-bottom: 20px;
+}
+
+.cnick {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.writer-user {
+    margin: 16px 0;
+    gap: 5px;
+}
+
+.textInput {
+    margin: 0 32px;
+    width: 1104px;
+    border: #f1f3f7 1px solid;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding-right: 12px;
+    justify-content: space-between;
+}
+
+.comment {
+    font-weight: 600;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.cmsCnt {
+    color: #ff5833;
+}
+
+.texta {
+    width: 1000px;
+    height: 120px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    font-family: "pretendard";
+    border-radius: 10px;
+}
+
+.c-img {
+    width: 450px;
+    height: 540px;
+    background-color: #f1f3f7;
+    margin: 10px 0;
+}
+
+.ectInfo {
+    color: #6a7685;
+    gap: 5px;
+}
+
+.category {
+    width: fit-content;
+    color: #ff5833;
+    font-size: 14px;
+    font-weight: 600;
+    border: #ff5833 1px solid;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.ects {
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+}
+
+.favBtn {
+    width: 80px;
+    height: 80px;
+    border: #f1f3f7 1px solid;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #6a7685;
+}
+
+.favdiv {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.comms {
+    margin-left: 32px;
+}
+
+.reply {
+    font-size: 13px;
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.commentList {
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* 글작성 */
+
+.comForm-body {
+    margin: 40px 0;
+    gap: 16px;
+}
+
+.community-input-content {
+    resize: none;
+    width: 100% !important;
+    padding: 12px;
+    min-height: 325px !important;
+}
+
+.img-preview,
+.img-add-box {
+    width: 80px;
+    height: 80px;
+    background-color: #f1f3f7;
+}
+
+.img-add-box {
+    justify-content: center;
+    background-color: #303441;
+    cursor: pointer;
+}
+
+.com-write-buttons {
+    justify-content: center;
+    gap: 8px;
+    margin: 40px 0;
+}
+
+.com-write-images {
+    gap: 16px;
+}
+
+.commList-top {
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.comLabel {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Com-card {
+    width: 100% !important;
+}
+
+.commcardList {
+    margin: 40px 0;
+    gap: 16px;
+}

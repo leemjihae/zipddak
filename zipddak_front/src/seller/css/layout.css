@@ -1,0 +1,151 @@
+.header {
+    display: flex;
+    width: 100%;
+    padding: 10px 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--base);
+}
+
+/* ************************
+가운데 메뉴
+************************** */
+.large_menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* 기본 대메뉴 스타일 */
+.large_menu1,
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* hover 또는 open 시 텍스트/아이콘 색상 변화 */
+.large_menu1:hover > a,
+.large_menu1:hover > a i,
+.dropdown:hover > .menu_label,
+.dropdown.open > .menu_label,
+.dropdown:hover > .menu_label i,
+.dropdown.open > .menu_label i {
+    color: #ff5733 !important;
+    font-weight: 600;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown_menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    border: 1px solid var(--outerLine);
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 150px;
+    width: auto;
+    white-space: nowrap;
+    z-index: 200;
+
+    opacity: 0;
+    transform: translateY(5px);
+    pointer-events: none; /* 닫힐 때 클릭 방지 */
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* hover일 때도 열리게, open일 때는 강제 열기 */
+.dropdown:hover .dropdown_menu,
+.dropdown.open .dropdown_menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* =========================
+    소메뉴 스타일
+========================= */
+.dropdown_menu li {
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+/* 소메뉴 hover 시 효과 */
+.dropdown_menu li:hover {
+    background: rgba(255, 87, 51, 0.2);
+}
+
+.dropdown_menu li:hover a,
+.dropdown_menu li:hover a i {
+    color: #ff5733 !important;
+    font-weight: 600;
+}
+
+.dropdown_icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dropdown_icon.rotate {
+    transform: rotate(180deg);
+}
+/* ************************
+오른쪽 메뉴 
+************************** */
+.user_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.bi-bell {
+    font-size: 20px;
+}
+
+.user_icon {
+    display: flex;
+    align-items: center;
+}
+
+/* ************************
+    푸터
+************************** */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 124px;
+    padding: 24px 167px;
+    border-top: 1px solid #f1f3f7;
+}
+
+.etc_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.other_menu {
+    display: flex;
+    gap: 15px;
+}
+
+.sns_icon {
+    display: flex;
+    gap: 10px;
+}
+
+.copyRight,
+.sns_icon i {
+    color: var(--footer);
+}

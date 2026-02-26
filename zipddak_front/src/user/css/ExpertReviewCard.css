@@ -1,0 +1,51 @@
+.expertReview-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.expertReview-writer-info-div {
+    display: flex;
+    align-content: center;
+    height: 40px;
+    gap: 8px;
+}
+
+.expertReview-writer-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.expertReview-imgs-div {
+    display: flex;
+    gap: 8px;
+}
+
+.expertReview-imgs {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.expertReview-review-date {
+    display: flex;
+    align-items: center;
+}
+
+.expertReview-writer-review-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.expertReview-hr {
+    color: #e5e5e5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.expertProfile-review-score-div {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,113 @@
+.ProductOrderComplate-main-div {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 30px;
+}
+
+.order-complate-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.order-complate-img {
+    width: 245px;
+    height: 160px;
+}
+
+.order-complate-top-table {
+    border-top: 2px solid #6d758f;
+    width: 100%;
+}
+
+.order-complate-top-table-first-tr > td {
+    text-align: center;
+    height: 50px;
+}
+
+.order-complate-product-img {
+    width: 105px;
+    height: 105px;
+    border: 1px solid black;
+}
+
+.order-complate-first-table {
+    width: 100%;
+}
+
+.order-complate-second-table-tr {
+    border-top: 1px solid #eceff1;
+}
+
+.order-complate-second-table-tr > td {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.order-complate-second-table {
+    width: 100%;
+    border-top: 2px solid #6d758f;
+}
+
+.order-complate-second-table td {
+    height: 50px;
+}
+
+.order-complate-th {
+    text-align: center;
+    width: 100px;
+}
+
+.order-complate-td > span {
+    padding-left: 15px;
+}
+
+.order-complate-line {
+    border-top: 1px solid #eceff1;
+}
+
+.order-complate-third-table {
+    width: 100%;
+    border-top: 2px solid #6d758f;
+}
+
+.order-complate-third-table td {
+    height: 50px;
+}
+
+.order-complate-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.order-complate-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5733;
+    color: #ffffff;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.order-complate-td-productName {
+    width: 300px;
+}
+
+.order-complate-td-colorSize {
+    width: 225px;
+}
+
+.order-complate-td-totalPrice {
+    width: 90px;
+}
+
+.order-complate-td-img {
+    width: 145px;
+}

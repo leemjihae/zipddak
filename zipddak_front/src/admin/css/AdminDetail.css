@@ -1,0 +1,220 @@
+.admin-body-div {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* 전체 화면 높이 최소 확보 */
+    align-items: stretch; /* 기본값, 생략 가능 */
+}
+
+.admin-detail-div {
+    width: 100%;
+    min-width: 1140px;
+}
+
+.admin-detail-top-div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+.admin-detail-back-div {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+
+    height: 60px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.admin-detail-back-button {
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.admin-detail-table-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.admin-detail-profile-header {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+
+    background-color: #303441;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.admin-detail-profile-span {
+    color: #ffffff;
+}
+
+.admin-detail-table {
+    width: 100%;
+}
+
+.admin-detail-user-profileImg {
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+}
+
+.admin-detail-profileImg-td {
+    height: 112px;
+    width: 120px;
+}
+
+.admin-detail-table td {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.admin-detail-tr-td {
+    width: 120px;
+    height: 50px;
+}
+
+.admin-detail-tr-td-intro {
+    width: 120px;
+    height: 122px;
+}
+
+.admin-detail-select-btn,
+.admin-detail-default-btn {
+    width: 135px;
+    height: 44px;
+
+    border-radius: 8px 8px 0 0;
+    font-size: 16px;
+}
+
+.admin-detail-select-btn {
+    border: none;
+    background-color: #303441;
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+.admin-detail-default-btn {
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+
+    font-weight: 500;
+}
+
+.admin-detail-under-tables {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 40px;
+}
+
+.admin-detail-under-table-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.admin-detail-table-second-div {
+    width: 980px;
+}
+
+.admin-detail-under-table {
+    width: 100%;
+}
+
+.admin-detail-under-table td {
+    text-align: center;
+    height: 50px;
+}
+
+.admin-detail-under-table > thead td {
+    border-bottom: 1px solid #6d758f;
+}
+
+.admin-detail-under-table > tbody td {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.admin-detail-second-table-td-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-detail-under-table-div {
+    height: 300px;
+}
+
+/* 전문가 */
+
+.admin-detail-expert-service {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-detail-expert-service-badge {
+    padding: 5px 15px;
+    border: 1px solid #e0e5eb;
+    border-radius: 30px;
+}
+
+.admin-detail-table-header-div {
+    padding: 10px 0;
+    border-bottom: 2px solid #303441;
+}
+
+.admin-detail-last-table-div {
+    margin-bottom: 50px;
+}
+
+.admin-detail-table-matching-textarea {
+    border: 1px solid #f1f3f7;
+    height: 117px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.admin-detail-table-sales-detail-table td {
+    text-align: center;
+}
+
+.admin-userList-report-radio-div {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.admin-detail-report-comment-input {
+    width: 600px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #303441;
+}
+.admin-detail-report-complate-button-div {
+    margin-bottom: 50px;
+}
+
+.admin-detail-report-complate-button-div > button {
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #303441;
+}

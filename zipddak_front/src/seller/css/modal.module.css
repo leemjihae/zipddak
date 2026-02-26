@@ -1,0 +1,87 @@
+/* 모달 공통 프레임  */
+.modalFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.modalHeader {
+    font-weight: 700;
+}
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 15px;
+}
+.selectReason,
+.writeReason {
+    width: 100%;
+}
+
+/* 환불모달 */
+.refundModalFrame {
+    width: 380px;
+    height: 286px;
+}
+.refundModalHeader,
+.refundModalBody {
+    background-color: #f1f3f7;
+}
+.refundModalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+.descRefundModalColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.refundModalColumn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* 운송장 등록 모달  */
+.trackingModalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+.descTrackingModalColumn,
+.trackingModalColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.trackingInput {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+/* 정산금 모의계산 모달  */
+.settleCalcContent.modal-content {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.contentParts {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    width: 50%;
+    margin-bottom: 8px;
+}

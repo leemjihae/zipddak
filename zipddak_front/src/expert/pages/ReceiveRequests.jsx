@@ -1,0 +1,206 @@
+import { useAtom, useAtomValue } from "jotai";
+import { useEffect, useState } from "react";
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import { tokenAtom, userAtom } from "../../atoms";
+import { myAxios } from "../../config";
+import { useNavigate, useSearchParams } from "react-router";
+
+export default function ReceiveRequests() {
+  const [requests, setRequests] = useState([]);
+
+  const [pageBtn, setPageBtn] = useState([]);
+  const [pageInfo, setPageInfo] = useState({
+    allPage: 0,
+    curPage: 1,
+    endPage: 0,
+    startPage: 1,
+  });
+
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const pageFromUrl = Number(searchParams.get("page")) || 1;
+
+  const user = useAtomValue(userAtom);
+  const [token, setToken] = useAtom(tokenAtom);
+
+  // 받은 요청서 조회
+  const getRequests = (page) => {
+    myAxios(token, setToken)
+      .get(
+        "http://localhost:8080" +
+          `/receive/requestList?username=${user.username}&page=${page}`
+      )
+      .then((res) => {
+        return res.data;
+      })
+      .then((data) => {
+        setRequests(data.requestList);
+        return data.pageInfo;
+      })
+      .then((pageData) => {
+        setPageInfo(pageData);
+        let pageBtns = [];
+        for (let i = pageData.startPage; i <= pageData.endPage; i++) {
+          pageBtns.push(i);
+        }
+        setPageBtn([...pageBtns]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  // 날짜 포멧팅
+  function timeAgo(sqlDateString) {
+    const now = new Date();
+    const date = new Date(sqlDateString);
+
+    // 날짜만 비교
+    const diffMs = now.setHours(0, 0, 0, 0) - date.setHours(0, 0, 0, 0);
+    const diffDay = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+    if (diffDay < 1) return "오늘";
+    return `${diffDay}일 전`;
+  }
+
+  useEffect(() => {
+    getRequests(pageFromUrl);
+  }, [pageFromUrl]);
+
+  return (
+    <div className="mypage-layout">
+      <div>
+        <h1 className="mypage-title">받은 요청서</h1>
+        <p style={{ color: "#6A7685", marginTop: "20px" }}>
+          사용자가 보낸 요청서 중, 견적을 보낼 수 있는 요청만 표시됩니다.
+        </p>
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "20px",
+        }}
+      >
+        {requests.map((request) => (
+          <div
+            style={{
+              display: "flex",
+              padding: "20px",
+              flexDirection: "column",
+              gap: "20px",
+              flex: "1 0 0",
+              borderRadius: "16px",
+              border: "1px solid #EFF1F5",
+            }}
+            key={request.estimateIdx}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                gap: "14px",
+              }}
+            >
+              <span
+                style={{
+                  width: "fit-content",
+                  height: "20px",
+                  display: "flex",
+                  padding: "5px 10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "8px",
+                  border: "1px solid rgba(255, 88, 51, 0.50)",
+                  background: "rgba(255, 88, 51, 0.05)",
+                  color: "#FF5833",
+                  fontSize: "12px",
+                  fontWeight: "500",
+                }}
+              >
+                모집 중
+              </span>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  alignSelf: "stretch",
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "600",
+                    lineHeight: "18px",
+                  }}
+                >
+                  {request.categoryName}
+                </p>
+                <p
+                  style={{
+                    color: "#6A7685",
+                    fontSize: "13px",
+                    fontWeight: "400",
+                  }}
+                >
+                  {timeAgo(request.createdAt)}
+                </p>
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                gap: "14px",
+                alignSelf: "stretch",
+                fontSize: "14px",
+              }}
+            >
+              <p>
+                <i
+                  class="bi bi-geo-alt"
+                  style={{ fontSize: "13px", marginRight: "2px" }}
+                ></i>
+                {request.location}
+              </p>
+              <p>
+                {Number(request.budget).toLocaleString()}만원 ·{" "}
+                {request.preferredDate}
+              </p>
+            </div>
+            <button
+              className="primary-button"
+              style={{
+                height: "33px",
+                color: "#FF5833",
+                backgroundColor: "#fff",
+              }}
+              onClick={() => {
+                navigate(
+                  `/expert/mypage/receive/request/${request.requestIdx}?page=${pageInfo.curPage}`
+                );
+              }}
+            >
+              요청 상세 보기
+            </button>
+          </div>
+        ))}
+      </div>
+
+      <Pagination className="my-pagination">
+        {pageBtn.map((b) => (
+          <PaginationItem key={b} active={b === pageInfo.curPage}>
+            <PaginationLink onClick={() => setSearchParams({ page: b })}>
+              {b}
+            </PaginationLink>
+          </PaginationItem>
+        ))}
+      </Pagination>
+    </div>
+  );
+}
