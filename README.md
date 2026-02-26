@@ -66,7 +66,7 @@
 <img width="1286" height="725" alt="image" src="https://github.com/user-attachments/assets/da10a397-8363-4a87-9a33-5e6019bc65a5" />
 
 -------------------
-## 담당 파트 대표 화면
+## 📍 담당 파트 대표 화면
 
 ### 메인화면
 <img width="801" height="721" alt="image" src="https://github.com/user-attachments/assets/f95086ea-fc59-43aa-a344-0e448644c7c9" />
